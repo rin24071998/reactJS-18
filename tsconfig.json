@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,9 +14,27 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "@config/*": ["config/*"],
+      "@constants/*": ["constants/*"],
+      "@helpers/*": ["helpers/*"],
+      "@icons/*": ["app/components/icons/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@layouts/*": ["app/layouts/*"],
+      "@i18n/*": ["i18n/*"],
+      "@locales/*": ["i18n/locales/*"],
+      "@pages/*": ["app/pages/*"],
+      "@routes/*": ["app/routes/*"],
+      "@shared/*": ["app/shared/*"],
+      "@components/*": ["app/components/*"],
+      "@services/*": ["services/*"],
+      "@hooks/*": ["app/hooks/*"],
+      "@redux/*": ["redux/*"],
+      "@stylesheet/*": ["stylesheet/*"],
+      "@/*": ["/*"]
+    }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

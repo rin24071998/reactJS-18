@@ -1,0 +1,28 @@
+.text-sm {
+  @include typography(map-get($font-size, sm), map-get($line-height, sm));
+}
+
+.text-normal {
+  @include typography(
+    map-get($font-size, normal),
+    map-get($line-height, normal)
+  );
+}
+.text-lg {
+  @include typography(map-get($font-size, lg), map-get($line-height, lg));
+}
+.text-xl {
+  @include typography(map-get($font-size, xl), map-get($line-height, xl));
+}
+.text-xxl {
+  @include typography(map-get($font-size, xxl), map-get($line-height, xxl));
+}
+.text-xxxl {
+  @include typography(map-get($font-size, xxxl), map-get($line-height, xxxl));
+}
+.text-xxxxl {
+  @include typography(map-get($font-size, xxxl), map-get($line-height, xxxxl));
+}
+.heading1 {
+  @include typography(40px, 40px);
+}

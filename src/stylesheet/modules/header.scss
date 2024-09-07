@@ -1,0 +1,47 @@
+.app-header {
+  padding: 0 20px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  .header-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .global-icon {
+      .ant-dropdown-trigger {
+        line-height: 1px;
+      }
+      .ant-badge-count {
+        border-radius: unset;
+        padding: 0 4px;
+        height: 16px;
+        line-height: 16px;
+        box-shadow: unset;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      svg {
+        font-size: 35px;
+        cursor: pointer;
+      }
+    }
+    .notification {
+      .ant-badge-count {
+        width: 20px;
+        margin-right: 4px;
+        margin-top: 4px;
+      }
+      svg {
+        font-size: 35px;
+      }
+    }
+  }
+}
+.header-global {
+  line-height: 1;
+}
+.header-user-info {
+  cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.ant-layout-sider {
+  &-light,
+  &-dark {
+    .ant-menu.ant-menu-root {
+      border-inline-end: unset;
+    }
+  }
+}
+.font-weight-bold {
+  font-weight: 700;
+}
+.ant-layout {
+  .ant-typography {
+    margin-bottom: 0;
+  }
+}

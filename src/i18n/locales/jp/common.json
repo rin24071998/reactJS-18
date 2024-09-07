@@ -1,0 +1,13 @@
+{
+  "page": {
+    "dashboard": "Dashboard",
+    "admin": "Admin",
+    "user1": "user1",
+    "user2": "user2"
+  },
+  "language": {
+    "english": "English",
+    "japanese": "Japanese"
+  },
+  "logout": "Logout"
+}

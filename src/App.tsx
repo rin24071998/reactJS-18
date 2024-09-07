@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { useState } from 'react';
+import { ConfigProvider } from 'antd';
+import { BrowserRouter } from 'react-router-dom';
+import '@stylesheet/styles.scss';
+import { configTheme } from '@config/theme.config';
+import { MenuTheme } from '@interfaces/theme';
+import Loading from '@shared/loading/Loading';
+import AppRoutes from '@routes/Routes';
+const App: React.FC = () => {
+  const [mode] = useState<MenuTheme>('light');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ConfigProvider theme={configTheme[mode]}>
+      <BrowserRouter>
+        <AppRoutes mode={mode} />
+        <Loading />
+      </BrowserRouter>
+    </ConfigProvider>
   );
-}
+};
 
 export default App;

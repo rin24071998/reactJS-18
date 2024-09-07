@@ -1,0 +1,26 @@
+import {
+  FundOutlined,
+  FolderOpenOutlined,
+  FileDoneOutlined,
+  SendOutlined,
+  SettingOutlined,
+  TrademarkOutlined,
+  ToolOutlined,
+  GlobalOutlined,
+  UserOutlined,
+  BellOutlined,
+  LogoutOutlined,
+} from '@ant-design/icons';
+export {
+  FundOutlined,
+  FolderOpenOutlined,
+  SendOutlined,
+  FileDoneOutlined,
+  SettingOutlined,
+  UserOutlined,
+  TrademarkOutlined,
+  ToolOutlined,
+  GlobalOutlined,
+  BellOutlined,
+  LogoutOutlined,
+};
